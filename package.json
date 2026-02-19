@@ -1,0 +1,12 @@
+{
+  "name": "meetup-demo",
+  "private": true,
+  "type": "module",
+  "description": "A repository for live demo at DX meetups",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@changesets/cli": "^2.29.8",
+    "@devcontainers/cli": "^0.83.2",
+    "turbo": "^2.8.10"
+  }
+}
