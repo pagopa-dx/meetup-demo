@@ -9,6 +9,11 @@ terraform {
       source  = "hashicorp/azuread"
       version = "~> 2.0"
     }
+
+    github = {
+      source  = "integrations/github"
+      version = "~> 6.0"
+    }
   }
 }
 
@@ -17,4 +22,8 @@ provider "azurerm" {
   storage_use_azuread = true
   subscription_id     = "35e6e3b2-4388-470e-a1b9-ad3bc34326d1"
   alias               = "DEV-DEVEX"
+}
+
+provider "github" {
+  owner = "pagopa-dx"
 }
