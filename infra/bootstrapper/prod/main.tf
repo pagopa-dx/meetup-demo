@@ -41,7 +41,7 @@ module "azure-DEV-DEVEX_bootstrap" {
 
   repository = {
     owner = "pagopa"
-    name  = "dx"
+    name  = "meetup-demo"
   }
 
   github_private_runner = {
