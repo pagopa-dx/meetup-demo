@@ -1,11 +1,11 @@
 data "azuread_group" "admins" {
-  display_name = "md-p-adgroup-admin"
+  display_name = "dx-p-adgroup-admin"
 }
 
 data "azuread_group" "developers" {
-  display_name = "md-p-adgroup-developers"
+  display_name = "dx-p-adgroup-developers"
 }
 
 data "azuread_group" "externals" {
-  display_name = "md-p-adgroup-externals"
+  display_name = "dx-p-adgroup-externals"
 }

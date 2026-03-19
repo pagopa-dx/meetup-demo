@@ -41,18 +41,20 @@ module "azure-DEV-DEVEX_bootstrap" {
 
   repository = {
     owner = "pagopa"
-    name  = "dx"
+    name  = "meetup-demo"
   }
 
   github_private_runner = {
     container_app_environment_id       = module.azure-DEV-DEVEX_core_values.github_runner.environment_id
     container_app_environment_location = local.azure_accounts.DEV-DEVEX.location
+    use_github_app                     = true
     labels = [
       "prod"
     ]
     key_vault = {
       name                = module.azure-DEV-DEVEX_core_values.common_key_vault.name
       resource_group_name = module.azure-DEV-DEVEX_core_values.common_key_vault.resource_group_name
+      use_rbac            = true
     }
   }
 
